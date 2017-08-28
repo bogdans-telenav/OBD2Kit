@@ -16,22 +16,22 @@
 		C79BEC801F546E06008FB981 /* FLLogging.h in Sources */ = {isa = PBXBuildFile; fileRef = 29AB068612F861A90073262E /* FLLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C79BEC811F546E06008FB981 /* NSStreamAdditions.h in Sources */ = {isa = PBXBuildFile; fileRef = 29AB075212F865A00073262E /* NSStreamAdditions.h */; };
 		C79BEC821F546E06008FB981 /* NSStreamAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AB075312F865A00073262E /* NSStreamAdditions.m */; };
-		C79BEC8D1F546EAD008FB981 /* ELM327.h in Headers */ = {isa = PBXBuildFile; fileRef = C79BEC871F546EAD008FB981 /* ELM327.h */; };
+		C79BEC8D1F546EAD008FB981 /* ELM327.h in Headers */ = {isa = PBXBuildFile; fileRef = C79BEC871F546EAD008FB981 /* ELM327.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C79BEC8E1F546EAD008FB981 /* ELM327.m in Sources */ = {isa = PBXBuildFile; fileRef = C79BEC881F546EAD008FB981 /* ELM327.m */; };
-		C79BEC8F1F546EAD008FB981 /* ELM327Command.h in Headers */ = {isa = PBXBuildFile; fileRef = C79BEC891F546EAD008FB981 /* ELM327Command.h */; };
+		C79BEC8F1F546EAD008FB981 /* ELM327Command.h in Headers */ = {isa = PBXBuildFile; fileRef = C79BEC891F546EAD008FB981 /* ELM327Command.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C79BEC901F546EAD008FB981 /* ELM327Command.m in Sources */ = {isa = PBXBuildFile; fileRef = C79BEC8A1F546EAD008FB981 /* ELM327Command.m */; };
-		C79BEC911F546EAD008FB981 /* ELM327ResponseParser.h in Headers */ = {isa = PBXBuildFile; fileRef = C79BEC8B1F546EAD008FB981 /* ELM327ResponseParser.h */; };
+		C79BEC911F546EAD008FB981 /* ELM327ResponseParser.h in Headers */ = {isa = PBXBuildFile; fileRef = C79BEC8B1F546EAD008FB981 /* ELM327ResponseParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C79BEC921F546EAD008FB981 /* ELM327ResponseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C79BEC8C1F546EAD008FB981 /* ELM327ResponseParser.m */; };
-		C79BEC951F546EB9008FB981 /* FLWifiScanTool.h in Headers */ = {isa = PBXBuildFile; fileRef = C79BEC931F546EB9008FB981 /* FLWifiScanTool.h */; };
+		C79BEC951F546EB9008FB981 /* FLWifiScanTool.h in Headers */ = {isa = PBXBuildFile; fileRef = C79BEC931F546EB9008FB981 /* FLWifiScanTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C79BEC961F546EB9008FB981 /* FLWifiScanTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C79BEC941F546EB9008FB981 /* FLWifiScanTool.m */; };
-		C79BECA01F546ED0008FB981 /* FLScanTool_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = C79BEC971F546ED0008FB981 /* FLScanTool_Private.h */; };
-		C79BECA11F546ED0008FB981 /* FLScanTool.h in Headers */ = {isa = PBXBuildFile; fileRef = C79BEC981F546ED0008FB981 /* FLScanTool.h */; };
+		C79BECA01F546ED0008FB981 /* FLScanTool_Private.h in Headers */ = {isa = PBXBuildFile; fileRef = C79BEC971F546ED0008FB981 /* FLScanTool_Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C79BECA11F546ED0008FB981 /* FLScanTool.h in Headers */ = {isa = PBXBuildFile; fileRef = C79BEC981F546ED0008FB981 /* FLScanTool.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C79BECA21F546ED0008FB981 /* FLScanTool.m in Sources */ = {isa = PBXBuildFile; fileRef = C79BEC991F546ED0008FB981 /* FLScanTool.m */; };
-		C79BECA31F546ED0008FB981 /* FLScanToolCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = C79BEC9A1F546ED0008FB981 /* FLScanToolCommand.h */; };
+		C79BECA31F546ED0008FB981 /* FLScanToolCommand.h in Headers */ = {isa = PBXBuildFile; fileRef = C79BEC9A1F546ED0008FB981 /* FLScanToolCommand.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C79BECA41F546ED0008FB981 /* FLScanToolCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = C79BEC9B1F546ED0008FB981 /* FLScanToolCommand.m */; };
-		C79BECA51F546ED0008FB981 /* FLScanToolResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = C79BEC9C1F546ED0008FB981 /* FLScanToolResponse.h */; };
+		C79BECA51F546ED0008FB981 /* FLScanToolResponse.h in Headers */ = {isa = PBXBuildFile; fileRef = C79BEC9C1F546ED0008FB981 /* FLScanToolResponse.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C79BECA61F546ED0008FB981 /* FLScanToolResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = C79BEC9D1F546ED0008FB981 /* FLScanToolResponse.m */; };
-		C79BECA71F546ED0008FB981 /* FLScanToolResponseParser.h in Headers */ = {isa = PBXBuildFile; fileRef = C79BEC9E1F546ED0008FB981 /* FLScanToolResponseParser.h */; };
+		C79BECA71F546ED0008FB981 /* FLScanToolResponseParser.h in Headers */ = {isa = PBXBuildFile; fileRef = C79BEC9E1F546ED0008FB981 /* FLScanToolResponseParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C79BECA81F546ED0008FB981 /* FLScanToolResponseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C79BEC9F1F546ED0008FB981 /* FLScanToolResponseParser.m */; };
 /* End PBXBuildFile section */
 
