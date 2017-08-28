@@ -1,5 +1,5 @@
 /*
- *  NSStreamAdditions.h
+ *  FLScanToolResponse.m
  *  OBD2Kit
  *
  *  Copyright (c) 2009-2011 FuzzyLuke Inc.
@@ -18,14 +18,21 @@
  *
  */
 
-#import <Foundation/NSStream.h>
+#import "FLScanToolResponse.h"
 
-/* 
- We are adding this as an addition to the NSStream class
- because Apple removed it from the iPhone SDK for some reason.
- */
-@interface NSStream (NSStreamAdditions)
+@implementation FLScanToolResponse
 
-+ (void)getIOStreamsToHostNamed:(NSString *)hostName port:(NSInteger)port inputStream:(NSInputStream * __strong *)inputStream outputStream:(NSOutputStream * __strong *)outputStream;
+- (id)init {
+	if(self = [super init]) {
+		_timestamp					= [NSDate date];
+	}
+	
+	return self;
+}
+
+- (void)setMode:(NSUInteger)mode
+{
+	_mode = (mode ^ 0x40);
+}
 
 @end

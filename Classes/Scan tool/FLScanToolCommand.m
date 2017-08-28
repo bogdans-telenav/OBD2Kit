@@ -1,5 +1,5 @@
 /*
- *  NSStreamAdditions.h
+ *  FLScanToolCommand.m
  *  OBD2Kit
  *
  *  Copyright (c) 2009-2011 FuzzyLuke Inc.
@@ -18,14 +18,33 @@
  *
  */
 
-#import <Foundation/NSStream.h>
+#import "FLScanToolCommand.h"
+#import "FLScanTool.h"
 
-/* 
- We are adding this as an addition to the NSStream class
- because Apple removed it from the iPhone SDK for some reason.
- */
-@interface NSStream (NSStreamAdditions)
+@implementation FLScanToolCommand
 
-+ (void)getIOStreamsToHostNamed:(NSString *)hostName port:(NSInteger)port inputStream:(NSInputStream * __strong *)inputStream outputStream:(NSOutputStream * __strong *)outputStream;
+@synthesize mode	= _mode,
+			pid		= _pid;
+
+- (NSData*)data {
+	// Abstract method
+	[self doesNotRecognizeSelector:_cmd];
+	return nil;
+}
+
+- (void)setData:(NSData *)data {
+	_data = nil;
+	_data = [[NSData alloc] initWithData:data];
+}
+
+
++ (FLScanToolCommand*) commandForMode:(int)mode 
+								pid:(NSUInteger)pid 
+							   data:(NSData*)data {
+
+	// Abstract method
+	[self doesNotRecognizeSelector:_cmd];
+	return nil;
+}
 
 @end

@@ -26,8 +26,8 @@
 
 + (void)getIOStreamsToHostNamed:(NSString *)hostName 
 						 port:(NSInteger)port 
-				  inputStream:(NSInputStream **)inputStream 
-				 outputStream:(NSOutputStream **)outputStream {
+				  inputStream:(NSInputStream * __strong *)inputStream
+				 outputStream:(NSOutputStream * __strong *)outputStream {
 	
     CFHostRef           host;
     CFReadStreamRef     readStream;
@@ -36,9 +36,9 @@
     readStream = NULL;
     writeStream = NULL;
     
-    host = CFHostCreateWithName(NULL, (CFStringRef) hostName);
+    host = CFHostCreateWithName(NULL, (__bridge CFStringRef) hostName);
     if (host != NULL) {
-        (void) CFStreamCreatePairWithSocketToCFHost(NULL, host, port, &readStream, &writeStream);
+        (void)CFStreamCreatePairWithSocketToCFHost(NULL, host, (int)port, &readStream, &writeStream);
         CFRelease(host);
     }
     
@@ -47,14 +47,14 @@
             CFRelease(readStream);
         }
     } else {
-        *inputStream = [(NSInputStream *) readStream autorelease];
+        *inputStream = (__bridge NSInputStream *) readStream;
     }
     if (outputStream == NULL) {
         if (writeStream != NULL) {
             CFRelease(writeStream);
         }
     } else {
-        *outputStream = [(NSOutputStream *) writeStream autorelease];
+        *outputStream = (__bridge NSOutputStream *) writeStream;
     }
 }
 

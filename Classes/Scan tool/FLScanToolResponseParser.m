@@ -1,5 +1,5 @@
 /*
- *  NSStreamAdditions.h
+ *  FLScanToolResponseParser.m
  *  OBD2Kit
  *
  *  Copyright (c) 2009-2011 FuzzyLuke Inc.
@@ -18,14 +18,41 @@
  *
  */
 
-#import <Foundation/NSStream.h>
+#import "FLScanToolResponseParser.h"
 
-/* 
- We are adding this as an addition to the NSStream class
- because Apple removed it from the iPhone SDK for some reason.
- */
-@interface NSStream (NSStreamAdditions)
 
-+ (void)getIOStreamsToHostNamed:(NSString *)hostName port:(NSInteger)port inputStream:(NSInputStream * __strong *)inputStream outputStream:(NSOutputStream * __strong *)outputStream;
+@implementation FLScanToolResponseParser
+
+
+- initWithBytes:(uint8_t*)bytes length:(NSUInteger)length {
+	
+	if(self = [super init]) {
+		_bytes	= bytes;
+		_length	= length;
+	}
+	
+	return self;
+}
+
+
+- (NSArray*) parseResponse:(FLScanToolProtocol)protocol {
+	// Abstract method
+	[self doesNotRecognizeSelector:_cmd];
+	return nil;
+}
+
+
+- (void)setBytes:(uint8_t*)bytes length:(NSInteger)length {
+	if(bytes) {
+		_bytes = bytes;
+		_length= length;
+	}
+}
+
+
+- (BOOL)resolveLocation {
+	// TODO: Read value from settings
+	return YES;
+}
 
 @end

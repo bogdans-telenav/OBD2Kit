@@ -19,9 +19,8 @@
  */
 
 
-#define VERBOSE_DEBUG			1
+#define VERBOSE_DEBUG			
 //#undef VERBOSE_DEBUG
-
 #define CONCAT(s1, s2) s1 s2
 
 /*
@@ -34,7 +33,7 @@
  Function Entry Macro 
  */
 #ifdef VERBOSE_DEBUG
-#	define FLTRACE_ENTRY NSLog(@"[ENTRY] %s (%d)", __PRETTY_FUNCTION__, __LINE__);
+#	define FLTRACE_ENTRY FLTRACE(@"[ENTRY] %s (%d)", __PRETTY_FUNCTION__, __LINE__);
 #else
 #	define FLTRACE_ENTRY
 #endif
@@ -44,7 +43,7 @@
  Function Exit Macro
  */
 #ifdef VERBOSE_DEBUG
-#	define FLTRACE_EXIT NSLog(@"[EXIT] %s (%d)", __PRETTY_FUNCTION__, __LINE__);
+#	define FLTRACE_EXIT FLTRACE(@"[EXIT] %s (%d)", __PRETTY_FUNCTION__, __LINE__);
 #else
 #	define FLTRACE_EXIT
 #endif
@@ -80,10 +79,10 @@
  NSError trace
  */
 #define FLNSERROR(err) if(err) {						\
-	FLTRACE(@"[NSError] %s (%d): (%d:%@) Reason: %@",	\
+	FLTRACE(@"[NSError] %s (%d): (%ld:%@) Reason: %@",	\
 		__PRETTY_FUNCTION__,							\
 		__LINE__,										\
-		err.code,										\
+		(long)err.code,									\
 		err.domain,										\
 		err.localizedDescription)						\
 }
