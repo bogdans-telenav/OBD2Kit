@@ -12,7 +12,7 @@
 		C79BEC651F546DCA008FB981 /* OBD2Kit.h in Headers */ = {isa = PBXBuildFile; fileRef = C79BEC571F546DCA008FB981 /* OBD2Kit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C79BEC741F546DFB008FB981 /* FLECUSensor.h in Sources */ = {isa = PBXBuildFile; fileRef = C79BEC371F546CC8008FB981 /* FLECUSensor.h */; };
 		C79BEC751F546DFB008FB981 /* FLECUSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = C79BEC381F546CC8008FB981 /* FLECUSensor.m */; };
-		C79BEC761F546DFB008FB981 /* OBD2Sensors.h in Sources */ = {isa = PBXBuildFile; fileRef = C79BEC391F546CC8008FB981 /* OBD2Sensors.h */; };
+		C79BEC761F546DFB008FB981 /* OBD2Sensors.h in Headers */ = {isa = PBXBuildFile; fileRef = C79BEC391F546CC8008FB981 /* OBD2Sensors.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C79BEC801F546E06008FB981 /* FLLogging.h in Sources */ = {isa = PBXBuildFile; fileRef = 29AB068612F861A90073262E /* FLLogging.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C79BEC811F546E06008FB981 /* NSStreamAdditions.h in Sources */ = {isa = PBXBuildFile; fileRef = 29AB075212F865A00073262E /* NSStreamAdditions.h */; };
 		C79BEC821F546E06008FB981 /* NSStreamAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 29AB075312F865A00073262E /* NSStreamAdditions.m */; };
@@ -241,6 +241,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C79BEC761F546DFB008FB981 /* OBD2Sensors.h in Headers */,
 				C79BEC8F1F546EAD008FB981 /* ELM327Command.h in Headers */,
 				C79BECA51F546ED0008FB981 /* FLScanToolResponse.h in Headers */,
 				C79BEC8D1F546EAD008FB981 /* ELM327.h in Headers */,
@@ -365,7 +366,6 @@
 				C79BEC741F546DFB008FB981 /* FLECUSensor.h in Sources */,
 				C79BEC8E1F546EAD008FB981 /* ELM327.m in Sources */,
 				C79BEC751F546DFB008FB981 /* FLECUSensor.m in Sources */,
-				C79BEC761F546DFB008FB981 /* OBD2Sensors.h in Sources */,
 				C79BECA21F546ED0008FB981 /* FLScanTool.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
