@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C79BEC5E1F546DCA008FB981 /* OBD2Kit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C79BEC551F546DCA008FB981 /* OBD2Kit.framework */; };
-		C79BEC631F546DCA008FB981 /* OBD2KitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = C79BEC621F546DCA008FB981 /* OBD2KitTests.m */; };
 		C79BEC651F546DCA008FB981 /* OBD2Kit.h in Headers */ = {isa = PBXBuildFile; fileRef = C79BEC571F546DCA008FB981 /* OBD2Kit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C79BEC741F546DFB008FB981 /* FLECUSensor.h in Headers */ = {isa = PBXBuildFile; fileRef = C79BEC371F546CC8008FB981 /* FLECUSensor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C79BEC751F546DFB008FB981 /* FLECUSensor.m in Sources */ = {isa = PBXBuildFile; fileRef = C79BEC381F546CC8008FB981 /* FLECUSensor.m */; };
@@ -35,16 +33,6 @@
 		C79BECA81F546ED0008FB981 /* FLScanToolResponseParser.m in Sources */ = {isa = PBXBuildFile; fileRef = C79BEC9F1F546ED0008FB981 /* FLScanToolResponseParser.m */; };
 /* End PBXBuildFile section */
 
-/* Begin PBXContainerItemProxy section */
-		C79BEC5F1F546DCA008FB981 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 0867D690FE84028FC02AAC07 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = C79BEC541F546DCA008FB981;
-			remoteInfo = OBD2Kit;
-		};
-/* End PBXContainerItemProxy section */
-
 /* Begin PBXFileReference section */
 		29AB068612F861A90073262E /* FLLogging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLLogging.h; sourceTree = "<group>"; };
 		29AB075212F865A00073262E /* NSStreamAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSStreamAdditions.h; sourceTree = "<group>"; };
@@ -52,7 +40,6 @@
 		29AB07E612F876DD0073262E /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		29AB07EA12F877360073262E /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
 		29AB081012F879FD0073262E /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		AA747D9E0F9514B9006C5449 /* OBD2Kit_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OBD2Kit_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		AACBBE490F95108600F1A2B1 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C79BEC371F546CC8008FB981 /* FLECUSensor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FLECUSensor.h; sourceTree = "<group>"; };
 		C79BEC381F546CC8008FB981 /* FLECUSensor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FLECUSensor.m; sourceTree = "<group>"; };
@@ -60,9 +47,6 @@
 		C79BEC551F546DCA008FB981 /* OBD2Kit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = OBD2Kit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C79BEC571F546DCA008FB981 /* OBD2Kit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OBD2Kit.h; sourceTree = "<group>"; };
 		C79BEC581F546DCA008FB981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		C79BEC5D1F546DCA008FB981 /* OBD2KitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OBD2KitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		C79BEC621F546DCA008FB981 /* OBD2KitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OBD2KitTests.m; sourceTree = "<group>"; };
-		C79BEC641F546DCA008FB981 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C79BEC871F546EAD008FB981 /* ELM327.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELM327.h; sourceTree = "<group>"; };
 		C79BEC881F546EAD008FB981 /* ELM327.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ELM327.m; sourceTree = "<group>"; };
 		C79BEC891F546EAD008FB981 /* ELM327Command.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ELM327Command.h; sourceTree = "<group>"; };
@@ -90,14 +74,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C79BEC5A1F546DCA008FB981 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C79BEC5E1F546DCA008FB981 /* OBD2Kit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -105,7 +81,6 @@
 			isa = PBXGroup;
 			children = (
 				C79BEC551F546DCA008FB981 /* OBD2Kit.framework */,
-				C79BEC5D1F546DCA008FB981 /* OBD2KitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,9 +89,7 @@
 			isa = PBXGroup;
 			children = (
 				C79BEC201F546C24008FB981 /* Classes */,
-				32C88DFF0371C24200C91783 /* Other Sources */,
 				C79BEC561F546DCA008FB981 /* OBD2Kit */,
-				C79BEC611F546DCA008FB981 /* OBD2KitTests */,
 				0867D69AFE84028FC02AAC07 /* Frameworks */,
 				034768DFFF38A50411DB9C8B /* Products */,
 			);
@@ -143,14 +116,6 @@
 			);
 			name = Utils;
 			path = Classes/Utils;
-			sourceTree = "<group>";
-		};
-		32C88DFF0371C24200C91783 /* Other Sources */ = {
-			isa = PBXGroup;
-			children = (
-				AA747D9E0F9514B9006C5449 /* OBD2Kit_Prefix.pch */,
-			);
-			name = "Other Sources";
 			sourceTree = "<group>";
 		};
 		C79BEC201F546C24008FB981 /* Classes */ = {
@@ -225,15 +190,6 @@
 			path = OBD2Kit;
 			sourceTree = "<group>";
 		};
-		C79BEC611F546DCA008FB981 /* OBD2KitTests */ = {
-			isa = PBXGroup;
-			children = (
-				C79BEC621F546DCA008FB981 /* OBD2KitTests.m */,
-				C79BEC641F546DCA008FB981 /* Info.plist */,
-			);
-			path = OBD2KitTests;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -279,24 +235,6 @@
 			productReference = C79BEC551F546DCA008FB981 /* OBD2Kit.framework */;
 			productType = "com.apple.product-type.framework";
 		};
-		C79BEC5C1F546DCA008FB981 /* OBD2KitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = C79BEC691F546DCA008FB981 /* Build configuration list for PBXNativeTarget "OBD2KitTests" */;
-			buildPhases = (
-				C79BEC591F546DCA008FB981 /* Sources */,
-				C79BEC5A1F546DCA008FB981 /* Frameworks */,
-				C79BEC5B1F546DCA008FB981 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				C79BEC601F546DCA008FB981 /* PBXTargetDependency */,
-			);
-			name = OBD2KitTests;
-			productName = OBD2KitTests;
-			productReference = C79BEC5D1F546DCA008FB981 /* OBD2KitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -305,10 +243,6 @@
 			attributes = {
 				TargetAttributes = {
 					C79BEC541F546DCA008FB981 = {
-						CreatedOnToolsVersion = 8.3.3;
-						ProvisioningStyle = Automatic;
-					};
-					C79BEC5C1F546DCA008FB981 = {
 						CreatedOnToolsVersion = 8.3.3;
 						ProvisioningStyle = Automatic;
 					};
@@ -330,20 +264,12 @@
 			projectRoot = "";
 			targets = (
 				C79BEC541F546DCA008FB981 /* OBD2Kit */,
-				C79BEC5C1F546DCA008FB981 /* OBD2KitTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
 		C79BEC531F546DCA008FB981 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		C79BEC5B1F546DCA008FB981 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -370,33 +296,18 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C79BEC591F546DCA008FB981 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				C79BEC631F546DCA008FB981 /* OBD2KitTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		C79BEC601F546DCA008FB981 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = C79BEC541F546DCA008FB981 /* OBD2Kit */;
-			targetProxy = C79BEC5F1F546DCA008FB981 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		1DEB922308733DC00010E9CD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
@@ -406,10 +317,11 @@
 		1DEB922408733DC00010E9CD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				ARCHS = "$(ARCHS_STANDARD)";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				OTHER_LDFLAGS = "-ObjC";
 				PREBINDING = NO;
 				SDKROOT = iphoneos;
@@ -420,6 +332,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -480,6 +393,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD)";
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
@@ -531,99 +445,6 @@
 			};
 			name = Release;
 		};
-		C79BEC6A1F546DCA008FB981 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_DYNAMIC_NO_PIC = NO;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = OBD2KitTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_BUNDLE_IDENTIFIER = com.OBD2KitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-			};
-			name = Debug;
-		};
-		C79BEC6B1F546DCA008FB981 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
-				COPY_PHASE_STRIP = NO;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				INFOPLIST_FILE = OBD2KitTests/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_BUNDLE_IDENTIFIER = com.OBD2KitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -641,15 +462,6 @@
 			buildConfigurations = (
 				C79BEC671F546DCA008FB981 /* Debug */,
 				C79BEC681F546DCA008FB981 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		C79BEC691F546DCA008FB981 /* Build configuration list for PBXNativeTarget "OBD2KitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				C79BEC6A1F546DCA008FB981 /* Debug */,
-				C79BEC6B1F546DCA008FB981 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -7,6 +7,19 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "FLScanTool.h"
+#import "FLWifiScanTool.h"
+#import "FLECUSensor.h"
+#import "OBD2Sensors.h"
+#import "FLScanToolCommand.h"
+#import "FLScanToolResponse.h"
+#import "FLScanToolResponseParser.h"
+#import "FLLogging.h"
+#import "NSStreamAdditions.h"
+#import "ELM327.h"
+#import "ELM327Command.h"
+#import "ELM327ResponseParser.h"
+#import "FLScanTool_Private.h"
 
 //! Project version number for OBD2Kit.
 FOUNDATION_EXPORT double OBD2KitVersionNumber;
