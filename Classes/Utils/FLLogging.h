@@ -26,7 +26,7 @@
 /*
  Trace Macro
  */
-#define FLTRACE(...) NSLog(__VA_ARGS__);
+#define FLTRACE(...) ;
 
 
 /*
